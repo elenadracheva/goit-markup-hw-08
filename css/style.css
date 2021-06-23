@@ -365,6 +365,7 @@ img {
     background-color: var(--accent-color);
     border-radius: 50%;
     outline: none;
+
 }
 .social-container:hover .instagram-icon,
 .social-container:focus .instagram-icon{
@@ -406,21 +407,34 @@ img {
     fill: #AFB1B8;
     width: 20px;
     height: 20px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .twitter-icon {
     fill: #AFB1B8;
     width: 20px;
     height: 20px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .facebook-icon {
     fill: #AFB1B8;
     width: 20px;
     height: 20px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .linkedin-icon {
     fill: #AFB1B8;
     width: 20px;
     height: 20px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients {
@@ -652,9 +666,9 @@ img {
     border: transparent;
     border-radius: 4px;
     text-align: center;
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .menu-button:hover,
 .menu-button:focus {
@@ -682,6 +696,8 @@ img {
     margin-top: 30px;
     flex-basis: calc(100%/3 - 30px);
     transition-property: background-color;
+    transition: transform;
+    transform: translateY(0%) ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -696,6 +712,7 @@ img {
     color: #FFFFFF;
     background-color: var(--accent-color);
     transform: translateY(0%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-card-text {
     display: inline-block;
@@ -745,6 +762,7 @@ img {
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
 }
 .backdrop.is-hidden.modal {
     transform: translate(-50%, -50%) scale(1.1);
@@ -757,7 +775,7 @@ img {
     width: 528px;
     height: 581px;
     background-color: #FFFFFF;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-close {
     position: absolute;
