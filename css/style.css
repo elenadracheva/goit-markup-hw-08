@@ -666,15 +666,13 @@ img {
     border: transparent;
     border-radius: 4px;
     text-align: center;
-    transition-property: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition-property: box-shadow, background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-button:hover,
 .menu-button:focus {
-    box-shadow: 0px 2px 2px 0px #0000001F;
-    box-shadow: 0px 1px 2px 0px #00000014;
-    box-shadow: 0px 3px 1px 0px #0000001A;
+    box-shadow: 0px 2px 2px 0px #0000001F, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001A;
     outline: none;
 }
 .portfolio-main-menu {
@@ -700,11 +698,14 @@ img {
     position: relative;
     overflow: hidden;
 }
-.portfolio-item-link:hover .portfolio-card-text,
-.portfolio-item-link:focus .portfolio-card-text {
-    opacity: 0.9;
-    
-    transform: translateY(0%);
+.portfolio-card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 .portfolio-card-text {
     display: inline-block;
@@ -726,22 +727,21 @@ img {
     opacity: 0.9;
     transform: translateY(0%);
 }
-.portfolio-item:hover,
-.portfolio-item:focus {
-    box-shadow: 1px 4px 6px 0px #00000029;
-    box-shadow: 0px 4px 4px 0px #0000000F;
-    box-shadow: 0px 1px 1px 0px #0000001F;
+.portfolio-item-link {
+    display: inline-block;
+    transition-property: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-item-link:hover .portfolio-card-text,
+.portfolio-item-link:focus .portfolio-card-text {
+    opacity: 0.9;
+    transform: translateY(0%);
+}
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
+    box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #462c2c0f, 0px 1px 1px 0px #0000001F;
     outline: none;
 }
-.portfolio-card {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-}
+
 .backdrop {
     position: fixed;
     top: 0px;
