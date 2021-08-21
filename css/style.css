@@ -31,6 +31,7 @@ img {
     margin-right: auto;
     margin-left: auto;
 }
+/* Шапка */
 .header-container {
     border-bottom: 1px solid #ECECEC;
 }
@@ -82,6 +83,8 @@ img {
 .menu-list.menu-list-item:last-child {
     margin-right: 0px;
 }
+/* Навигация сайта */
+
 .nav-contacts-list {
     display: flex;
     padding: 0px;
@@ -90,33 +93,6 @@ img {
 }
 .nav-contacts-list .nav-contacts-item:not(:last-child) {
     margin-right: 50px;
-}
-.contacts-header {
-    display: flex;
-    align-items: center;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts-header:hover,
-.contacts-header:focus {
-    color: var(--accent-color);
-    outline: none;
-}
-.nav-contacts-list {
-    display: flex;
-}
-.email-icon {
-    margin-right: 10px;
-    fill: currentColor;
-    width: 16px;
-    height: 12px;
-}
-.phone-icon {
-    margin-right: 10px;
-    fill: currentColor;
-    width: 10px;
-    height: 16px;
 }
 .title-nav {
     display: block;
@@ -134,6 +110,54 @@ img {
     color: var(--accent-color);
     outline: none;
 }
+
+/* Контактная информация */
+
+.contacts-header {   
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-header:hover, 
+.contacts-header:focus {
+    color: #2196F3;
+    outline: none;
+}
+
+.contacts-header {
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-header:hover,
+.contacts-header:focus {
+    color: var(--accent-color);
+    outline: none;
+}
+
+/* Иконки  */
+.email-icon {
+    margin-right: 10px;
+    fill: currentColor;
+    width: 16px;
+    height: 12px;
+}
+.phone-icon {
+    margin-right: 10px;
+    fill: currentColor;
+    width: 10px;
+    height: 16px;
+}
+
+/* Главное меню с кнопкой для модалки */
 
 .menu-button {
     font-family: Roboto;
@@ -193,12 +217,16 @@ img {
     line-height: 30px;
     border-radius: 4px;
 }
+
+/* Секция Наши преимущества */
+
 .advantage-container {
     margin-left: auto;
     margin-right: auto;
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .advantage {
     font-size: 14px;
     font-weight: 700;
@@ -253,6 +281,9 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+/* Секция Наши работы, чем мы занимаемся */
+
 .works {
     padding-bottom: 94px;
 }
@@ -293,6 +324,8 @@ img {
 .works-list-item:not(:last-child){
     margin-right: 30px;
 }
+
+/* Секция Наша команда */
 
 .team {
     padding-top: 94px ;
@@ -346,6 +379,9 @@ img {
 .team-person:not(:last-child) {
     margin-right: 30px;
 }
+
+/* Социальные сети */
+
 .social-container {
     display: flex;
     align-items: center;
@@ -437,6 +473,8 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Наши клиенты */
+
 .clients {
     margin: 0px;
     margin-bottom: 50px;
@@ -457,7 +495,6 @@ img {
     margin: 0px;
     padding: 0px;
 }
-
 .clients-list-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -518,26 +555,14 @@ img {
     width: 94px;
     fill: currentColor;
 }
+
+/* Подвал */
+
 .contacts {
     margin: 0px;
     padding: 0px;
 }
-.contacts-header {   
-    font-weight: 500;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    color: #757575;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts-header:hover, 
-.contacts-header:focus {
-    color: #2196F3;
-    outline: none;
-}
+
 .footer-container {
     display: flex;
     align-items: baseline;
@@ -615,6 +640,54 @@ img {
     line-height: 1.16;
     letter-spacing: 0.03em;
 }
+.footer-subscribe {
+    margin-left: 93px;
+}
+.subscribe {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: Roboto;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+.button-subscribe {
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: Roboto;
+    line-height: 30px;
+    letter-spacing: 6%;
+    background-color: #2196F3;
+    border-radius: 4px;
+}
+.footer-subscribe-button {
+    display: flex;
+    align-items: center;
+}
+
+.footer-subscribe input[type="email"] {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    background-color: #2F303A;
+    border: 1px solid #FFFFFF4D;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 3%;
+    color: rgba(255, 255, 255, 0.6)
+}
 .social-list-link {
     display: flex;
     margin-right: 10px;
@@ -623,6 +696,8 @@ img {
     background-color:rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
+
+/* Страница номер 2 Портфолио */
 
 .project-title {
     margin: 0px;
@@ -741,7 +816,7 @@ img {
     box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #462c2c0f, 0px 1px 1px 0px #0000001F;
     outline: none;
 }
-
+/* Бэкдроп */
 .backdrop {
     position: fixed;
     top: 0px;
@@ -760,16 +835,17 @@ img {
 .backdrop.is-hidden.modal {
     transform: translate(-50%, -50%) scale(1.1);
 }
+/* Модальное окно */
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.9);
     width: 528px;
-    height: 581px;
     background-color: #FFFFFF;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* Кнопка закрытия */
 .button-close {
     position: absolute;
     top: 0;
@@ -786,4 +862,180 @@ img {
     fill: black;
     width: 11px;
     height: 11px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close:focus,
+.close:hover {
+    fill: #2196F3;
+}
+.button-close:focus .close,
+.button-close:hover .close {
+
+   fill: #2196F3;}
+/* Форма в модальном окне  */
+
+textarea {
+    margin-bottom: 20px;
+    padding-left: 16px;
+    padding-top: 12px;
+    resize: none;
+    border-color: rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-style: roboto; 
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1%;
+    color:rgba(117, 117, 117, 0.5) ;
+    transition-property: outline-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+textarea:focus {
+    outline-color: #2196F3;
+}
+
+.form {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.form-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-field input {
+    padding: 0px;
+    padding-left: 42px;
+    height: 40px;
+    border-color: #21212133;
+    border-radius: 4px;
+}
+.form-comment {
+    margin-top: 40px;
+    margin-bottom: 12px;
+    font-style: roboto; 
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 3%;
+    text-align: center;
+}
+.icon-human {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 12px;
+    height: 12px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
+}
+.icon-email2 {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 15px;
+    height: 12px;
+    fill: currentColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-phone-call {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 13px;
+    height: 13px;
+    fill: currentColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.label-name {
+    padding-bottom: 4px;
+    font-style: roboto; 
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1%;
+    color: #757575;
+}
+.form-input {
+    transition-property: outline-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-field:hover .form-input,
+.form-field:focus .form-input
+{
+    outline-color: #2196F3;
+}
+
+.form-field:hover .icon-human,
+.form-field:focus .icon-human
+{
+    fill: #2196F3;
+}
+.form-field:hover .icon-email2,
+.form-field:focus .icon-email2
+{
+    fill: #2196F3;
+}
+.form-field:hover .icon-phone-call,
+.form-field:focus .icon-phone-call {
+    fill: #2196F3;
+}
+
+.contract-terms {
+    text-decoration: underline;
+    color: #2196F3;
+}
+.button-submit {
+    margin-bottom: 40px;
+    margin-left: 124px;
+    height: 50px;
+    width: 200px;
+    background-color:#2196F3;
+    border-radius: 4px;
+    border-color: transparent;
+    color: #EEEEEE;
+    box-shadow: 0px 4px 4px 0px #00000026;
+}
+
+.checkbox-label-name {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-style: roboto; 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 3%;
+    color: #757575;
+}
+.checkbox {
+    appearance: none;
+}
+.icon-checkbox {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 4px;
+    transition-property: background-color, color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox:checked  + .icon-checkbox {
+    border-color: #2196F3;
+    background-color:#2196F3;
+    background-image: url(/images/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
 }
