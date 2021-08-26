@@ -692,9 +692,22 @@ img {
     display: flex;
     margin-right: 10px;
 }
+.social-list-link .instagram-icon {
+    fill: #FFFFFF;
+}
+.social-list-link .twitter-icon {
+    fill: #FFFFFF;
+}
+.social-list-link .facebook-icon {
+    fill: #FFFFFF;
+}
+.social-list-link .linkedin-icon {
+    fill: #FFFFFF;
+}
 .social-container {
     background-color:rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    
 }
 
 /* Страница номер 2 Портфолио */
@@ -874,12 +887,14 @@ img {
 .button-close:hover .close {
 
    fill: #2196F3;}
+
 /* Форма в модальном окне  */
 
 textarea {
     margin-bottom: 20px;
     padding-left: 16px;
     padding-top: 12px;
+    height: 120px;
     resize: none;
     border-color: rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -1035,7 +1050,7 @@ textarea:focus {
 .checkbox:checked  + .icon-checkbox {
     border-color: #2196F3;
     background-color:#2196F3;
-    background-image: url(/images/icon-check.svg);
+    background-image: url(../images/icon-check.svg);
     background-size: contain;
     background-origin: border-box;
 }
