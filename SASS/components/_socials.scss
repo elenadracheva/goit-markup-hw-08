@@ -1,0 +1,111 @@
+.social__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 44px;
+    height: 44px;
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+      background-color: var(--accent-color);
+      border-radius: 50%;
+      outline: none;
+    }
+    &:hover .social-instagram,
+    &:focus .social-instagram {
+        fill: #FFFFFF;
+        outline: none;
+    }
+    &:hover .social-twitter,
+    &:focus .social-twitter {
+        fill: #FFFFFF;
+        outline: none;
+    }
+    &:hover .social-facebook,
+    &:focus .social-facebook{
+        fill: #FFFFFF;
+        outline: none;
+    }
+    &:hover .social-linkedin,
+    &:focus .social-linkedin {
+        fill: #FFFFFF;
+        outline: none;
+    }
+
+}
+.social__list {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.social__list-link {
+    display: flex;
+    margin-right: 10px;
+    &.social-instagram {
+        fill: #FFFFFF;
+    }
+    &.social-twitter {
+        fill: #FFFFFF;
+    }
+    &.social-facebook {
+        fill: #FFFFFF;
+    }
+    &.social-linkedin {
+        fill: #FFFFFF;
+    }
+
+}
+
+.social__list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-instagram {
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.social-twitter {
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-facebook {
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-linkedin {
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
