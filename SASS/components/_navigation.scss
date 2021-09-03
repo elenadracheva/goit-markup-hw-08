@@ -1,0 +1,28 @@
+.nav-contacts__list {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    &.nav-contacts__item:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+.title-nav {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2F303A;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    outline: none;
+   }
+}
+
