@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+}
+.footer-contacts {
+    margin-right: 70px;
+}
+.footer__parts {
+    display: flex;
+    align-items: baseline;
+}
+.footer__socials{
+    display: flex;
+    flex-direction: column;
+}
+
+.join-us {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: Roboto;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
