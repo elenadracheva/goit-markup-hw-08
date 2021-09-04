@@ -17,7 +17,7 @@ textarea {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 textarea:focus {
-    outline-color: $accent-color;
+    outline-color: $accolor;
 }
 
 .form {
@@ -98,34 +98,34 @@ textarea:focus {
 .form-field:hover .form-input,
 .form-field:focus .form-input
 {
-    outline-color: #2196F3;
+    outline-color: $accolor;
 }
 
 .form-field:hover .icon-human,
 .form-field:focus .icon-human
 {
-    fill: #2196F3;
+    fill: $accolor;
 }
 .form-field:hover .icon-email2,
 .form-field:focus .icon-email2
 {
-    fill: #2196F3;
+    fill: $accolor;
 }
 .form-field:hover .icon-phone-call,
 .form-field:focus .icon-phone-call {
-    fill: #2196F3;
+    fill: $accolor;
 }
 
 .contract-terms {
     text-decoration: underline;
-    color: #2196F3;
+    color: $accolor;
 }
 .button-submit {
     margin-bottom: 40px;
     margin-left: 124px;
     height: 50px;
     width: 200px;
-    background-color:#2196F3;
+    background-color:$accolor;
     border-radius: 4px;
     border-color: transparent;
     color: #EEEEEE;
@@ -156,8 +156,8 @@ textarea:focus {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox:checked  + .icon-checkbox {
-    border-color: #2196F3;
-    background-color:#2196F3;
+    border-color: $accolor;
+    background-color:$accolor;
     background-image: url(../images/icon-check.svg);
     background-size: contain;
     background-origin: border-box;
