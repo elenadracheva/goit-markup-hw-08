@@ -19,6 +19,7 @@ html {
 body {
   background-color: #FFFFFF;
   font-family: Roboto, sans-serif;
+  margin: 0px;
 }
 
 a {
@@ -149,7 +150,7 @@ img {
 }
 
 .title-nav:hover, .title-nav:focus {
-  color: var(--accent-color);
+  color: #2196F3;
   outline: none;
 }
 
@@ -280,13 +281,12 @@ img {
   font-size: 14px;
   font-weight: 700;
   color: #212121;
-  line-height: 1.14;
   letter-spacing: 0.03em;
 }
 
 .advantage__list {
   margin: 0px;
-  padding-bottom: 94px;
+  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,7 +298,6 @@ img {
 }
 
 .advantage__list-item {
-  height: 120px;
   width: 270px;
 }
 
@@ -306,6 +305,7 @@ img {
   display: block;
   content: "";
   height: 120px;
+  width: 270px;
   border-radius: 4px;
   background-position: center;
   background-repeat: no-repeat;
@@ -329,9 +329,11 @@ img {
 }
 
 .advantage__fill {
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
-  color: #757575;
+  letter-spacing: 0.03em;
+  line-height: 24px;
 }
 
 .works {
@@ -1110,6 +1112,8 @@ textarea:focus {
   padding-top: 6px;
   padding-right: 22px;
   padding-bottom: 6px;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 26px;
   border: transparent;
   border-radius: 4px;
