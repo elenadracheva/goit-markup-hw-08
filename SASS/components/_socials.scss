@@ -50,23 +50,7 @@
     align-items: center;
 }
 
-.social__list-link {
-    display: flex;
-    margin-right: 10px;
-    &.social-instagram {
-        fill: #FFFFFF;
-    }
-    &.social-twitter {
-        fill: #FFFFFF;
-    }
-    &.social-facebook {
-        fill: #FFFFFF;
-    }
-    &.social-linkedin {
-        fill: #FFFFFF;
-    }
 
-}
 
 .social__list-item:not(:last-child) {
     margin-right: 10px;
