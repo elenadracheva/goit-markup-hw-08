@@ -641,29 +641,6 @@ img {
           align-items: center;
 }
 
-.social__list-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 10px;
-}
-
-.social__list-link.social-instagram {
-  fill: #FFFFFF;
-}
-
-.social__list-link.social-twitter {
-  fill: #FFFFFF;
-}
-
-.social__list-link.social-facebook {
-  fill: #FFFFFF;
-}
-
-.social__list-link.social-linkedin {
-  fill: #FFFFFF;
-}
-
 .social__list-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -760,6 +737,29 @@ img {
   font-family: Roboto;
   line-height: 1.16;
   letter-spacing: 0.03em;
+}
+
+.social__list-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+.social__list-link .social-instagram {
+  fill: #FFFFFF;
+}
+
+.social__list-link .social-twitter {
+  fill: #FFFFFF;
+}
+
+.social__list-link .social-facebook {
+  fill: #FFFFFF;
+}
+
+.social__list-link .social-linkedin {
+  fill: #FFFFFF;
 }
 
 .address {
@@ -895,8 +895,7 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close:focus,
-.close:hover {
+.close:focus, .close:hover {
   fill: #2196F3;
 }
 
@@ -934,18 +933,6 @@ textarea:focus {
 .form {
   margin-left: 40px;
   margin-right: 40px;
-}
-
-.form-field {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 10px;
 }
 
 .form-field input {
@@ -1030,6 +1017,18 @@ textarea:focus {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-field {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
 .form-field:hover .form-input,
 .form-field:focus .form-input {
   outline-color: #2196F3;
@@ -1107,7 +1106,7 @@ textarea:focus {
   background-origin: border-box;
 }
 
-.menu-button {
+.submenu__button {
   padding-left: 22px;
   padding-top: 6px;
   padding-right: 22px;
@@ -1128,8 +1127,7 @@ textarea:focus {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-button:hover,
-.menu-button:focus {
+.submenu__button:hover, .submenu__button:focus {
   color: white;
   background-color: #2196F3;
   -webkit-box-shadow: 0px 2px 2px 0px #0000001F, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001A;
@@ -1229,6 +1227,11 @@ textarea:focus {
   left: 0;
   width: 100%;
   height: 100%;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 35;
   opacity: 0;
   color: #FFFFFF;
   background-color: var(--accent-color);
