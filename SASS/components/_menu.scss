@@ -1,19 +1,25 @@
 .menu {
     display: flex;
     align-items: center;
+    @media screen and(max-width:480px) {
+        height: 60px;
+    }
+    
 }
 .menu__list  {
     display: flex;
     margin: 0px;
     padding: 0px;
     &.menu__list-item:last-child {
-        margin-right: 0px;
-    }
+        margin-right: 0px;}
     & li:not(:last-child) {
         margin-right: 50px;
     }
-    
-}
+    @media screen and(max-width:480px) {
+        display:none;
+    }
+  
+} 
 .current {
     position: relative;
     display: block;
@@ -31,6 +37,9 @@
         height: 4px;
         border-radius: 2px;
         background-color: var(--accent-color);
+    }
+    @media screen and(max-width:480px) {
+        display:none;
     }
 }
 
