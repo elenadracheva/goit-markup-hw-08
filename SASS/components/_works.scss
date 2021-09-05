@@ -1,5 +1,8 @@
 .works {
     padding-bottom: 94px;
+    @media screen and(max-width:480px) {
+        display: none;
+    }
 }
 
 .works__type {
@@ -17,6 +20,9 @@
     display: flex;
     margin: 0px;
     padding: 0px;
+    @media screen and(max-width:480px) {
+        display: none;
+    }
 }
 .works__list-text {
     text-transform: uppercase;
@@ -49,4 +55,7 @@
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    @media screen and(max-width:480px) {
+        display: none;
+    }
 }
