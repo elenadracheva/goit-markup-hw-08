@@ -6,6 +6,9 @@
     &.nav-contacts__item:not(:last-child) {
         margin-right: 50px;
     }
+    @media screen and(max-width:480px) {
+        display:none;
+    }
 }
 
 .title-nav {
