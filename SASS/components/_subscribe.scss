@@ -1,16 +1,21 @@
 .subscribe {
     display: flex;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     color: #FFFFFF;
     font-family: Roboto;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    @media screen and(max-width:480px) {
+        flex-direction: column;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
 }
 .subscribe__button {
-    margin-left: 12px;
+    // margin-left: 12px;
     width: 200px;
     height: 50px;
     text-align: center;
@@ -22,13 +27,19 @@
     letter-spacing: 6%;
     background-color: $accolor;
     border-radius: 4px;
+    @media screen and(max-width:480px) {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
 }
 .subscribe__block {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .footer__subscribe {
-    margin-left: 93px;
+    // margin-left: 93px;
     & input[type="email"] {
         width: 358px;
         height: 50px;
@@ -44,6 +55,10 @@
         line-height: 20px;
         letter-spacing: 3%;
         color: rgba(255, 255, 255, 0.6)
+    }
+    @media screen and(max-width:480px) {
+        width: 100%;
+        text-align: center;
     }
 }
 
