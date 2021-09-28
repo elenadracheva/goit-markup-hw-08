@@ -1,8 +1,14 @@
 .advantage {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    @media screen and(max-width:480px) {
+        padding-top: 60px;
+        padding-bottom: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 .advantage__title {
@@ -10,23 +16,29 @@
     font-weight: 700;
     color: #212121;
     letter-spacing: 0.03em;
+   
+    @media screen and(max-width:480px) {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
 }
 .advantage__list {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
+    // margin: 0px;
+    // padding: 0px;
+    // display: flex;
     list-style: none;
       @media screen and(max-width:480px) {
         display: block;
-        
+        padding: 0px;  
+        margin: 0px;
     }
 }
 
 .advantage__list .advantage__list-item:not(:last-child) {
-    margin-right: 30px;
+    // margin-right: 30px;
     @media screen and(max-width:480px) {
         width: 450px;
-       
     }
 }
 .advantage__list-item { 
@@ -54,8 +66,11 @@
     font-weight: 400;
     letter-spacing: 0.03em;
     line-height: 24px;
+    @media screen and(max-width:480px) {
+        color: #757575;
+        margin-bottom: 30px;
+    }
 }
-
 .advantage__list-item:nth-child(1)::before {
     background-image: url(../images/antenna.png) ;
 }
