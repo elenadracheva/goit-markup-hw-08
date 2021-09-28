@@ -17,7 +17,19 @@
           <span class="logotype__studio">Studio</span> 
         </a> 
       <nav> 
-        <ul class="menu__list">                                                               
+        <button type="button" class="mobile-button is-open" data-menu-button>
+          <svg  
+          width="40px" 
+          height="40px"
+          aria-label="Переключатель мобильного меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          >
+            <use class="mobile-button_close" href="./images/symbol-defs.svg#icon-close-icon"></use>
+            <use class="mobile-button_open"  href="./images/symbol-defs.svg#icon-mob-menu"></use>
+          </svg>
+        </button>
+        <ul class="menu__list mobile-menu">                                                               
           <li class="menu__list-item"> <a href="" class="title-nav current" style="color: #2196F3 ;">Студия</a></li>
           <li class="menu__list-item"> <a href="./portfolio.html" target="blank" class="title-nav">Портфолио</a></li>
           <li class="menu__list-item"> <a href="" class="title-nav" >Контакты</a></li>
@@ -172,7 +184,7 @@
                       </li>
                    </ul>
                   <li class="team__person"> 
-                      <img src="images/team-nikolay.jpg" alt="Николай Тарасов" width="270" >
+                      <img src="images/team-nikolay.jpg" alt="Николай Тарасов"width="270"  >
                       <div class="team__person-card">  
                         <h3 class="team__member">Николай Тарасов</h3>
                         <p class="team__role">Marketing</p>
@@ -349,7 +361,7 @@
             </a>
           </li>
        </ul>
-    </div>
+       </div>
       <div class="footer__subscribe">
         <p class="subscribe">подпишитесь на рассылку</p>
         <div class="subscribe__block">
@@ -409,5 +421,6 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
