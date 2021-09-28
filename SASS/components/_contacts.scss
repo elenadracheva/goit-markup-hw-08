@@ -1,6 +1,10 @@
 .contacts {
     margin: 0px;
     padding: 0px;
+    @media screen and(max-width:480px) {
+        text-align: center;
+      
+    }
 }
 .contacts__header {  
     display: flex;
@@ -36,9 +40,16 @@
       color: var(--accent-color);
       outline: none;
     } 
+    @media screen and(max-width:480px) {
+        text-align: center;
+      
+    }
 }
 .contacts li:not(:last-child) {
     margin-bottom: 9px;
+    @media screen and(max-width:480px) {
+    margin-bottom: 8px;
+    }
 }
 
 .contact-item:hover {
