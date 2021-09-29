@@ -41,21 +41,18 @@
   }
 .mobile-button_open {
     width: 24px;
-    height: 16px;
+    height: 16px;}
 
-}
 .mobile-button_close {
     width: 19px;
-    height: 19px;
-    
-}
+    height: 19px;}
+
 .mobile-button .mobile-button_close {
     display: none;
-}
-.mobile-button.is-open .mobile-button_close {
-    display: block;
 }
 .mobile-button.is-open .mobile-button_open {
     display: none;
 }
+.mobile-button.is-open .mobile-button_close {
+    display: block;}
 }
