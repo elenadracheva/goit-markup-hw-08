@@ -17,23 +17,27 @@
           <span class="logotype__studio">Studio</span> 
         </a> 
       <nav> 
-        <button type="button" class="mobile-button is-open" data-menu-button>
+        <button type="button" 
+        class="mobile-button is-open" 
+        aria-controls="mobile-menu"
+        data-menu-button>
           <svg  
           width="40px" 
           height="40px"
           aria-label="Переключатель мобильного меню"
           aria-expanded="false"
-          aria-controls="mobile-menu"
           >
-            <use class="mobile-button_close" href="./images/symbol-defs.svg#icon-close-icon"></use>
+            <use class="mobile-button_close" href="./images/symbol-defs.svg#icon-close-icon" data-menu-close></use>
             <use class="mobile-button_open"  href="./images/symbol-defs.svg#icon-mob-menu"></use>
           </svg>
         </button>
-        <ul class="menu__list mobile-menu">                                                               
+        <div id="mobile-menu" data-menu>
+         <ul class="menu__list" >                                                               
           <li class="menu__list-item"> <a href="" class="title-nav current" style="color: #2196F3 ;">Студия</a></li>
           <li class="menu__list-item"> <a href="./portfolio.html" target="blank" class="title-nav">Портфолио</a></li>
           <li class="menu__list-item"> <a href="" class="title-nav" >Контакты</a></li>
           </ul>  
+        </div>
       </nav>
         <ul class="nav-contacts__list">
           <li class="nav-contacts__item"> 
