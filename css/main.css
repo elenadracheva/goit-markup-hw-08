@@ -217,11 +217,11 @@ img {
   .mobile-button .mobile-button_close {
     display: none;
   }
-  .mobile-button.is-open .mobile-button_close {
-    display: block;
-  }
   .mobile-button.is-open .mobile-button_open {
     display: none;
+  }
+  .mobile-button.is-open .mobile-button_close {
+    display: block;
   }
 }
 
@@ -1190,6 +1190,13 @@ textarea:focus {
 .form {
   margin-left: 40px;
   margin-right: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .form {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .form-field input {
