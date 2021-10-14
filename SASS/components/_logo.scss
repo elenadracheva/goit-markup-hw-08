@@ -1,7 +1,11 @@
 .logotype {
     // margin-right: 93px;
-    @media screen and(max-width:480px) {
+    @media screen and (max-width: 480px), (min-width: 480px) {
         margin: 0px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        margin-right: 88px;
     }
 }
 .logotype__web {
@@ -18,12 +22,11 @@
 }
 .logotype__footer {
     display: block;
-    @media screen and(max-width:480px) {
+    @media screen and (max-width: 480px), (min-width: 480px) {
         margin-top: 60px;
         margin-bottom: 20px;
         text-align: center;
     }
- 
 }
 .logotype__studio-dark {
     font-family: Raleway;
