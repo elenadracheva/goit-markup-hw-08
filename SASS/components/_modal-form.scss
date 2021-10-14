@@ -23,7 +23,7 @@ textarea:focus {
 .form {
     margin-left: 40px;
     margin-right: 40px;
-    @media screen and(max-width:480px)  {
+    @media screen and (max-width: 480px), (min-width: 480px)  {
         width: 450px ;
         height: 609px ;
     }
