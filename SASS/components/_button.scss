@@ -10,7 +10,7 @@
     border-radius: 4px;
 }
 
-.submenu__button:nth-last-child(-n + 3) {
+.submenu__button:nth-child(-n + 3) {
     @media screen and (max-width: 480px), (min-width: 480px) {
         margin-bottom: 15px;
     }
