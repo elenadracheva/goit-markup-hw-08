@@ -3,6 +3,12 @@
     @media screen and (max-width: 480px), (min-width: 480px) {
         display: none;
     }
+    @media screen and (max-width: 768px), (min-width: 1119px) {
+        display: none;
+    }
+    @media screen and (min-width:1200px) {
+        display: block;
+    }
 }
 
 .works__type {
@@ -17,11 +23,16 @@
     bottom: 27px;
 }
 .works__list {
+    @media screen and (max-width: 480px), (min-width: 480px) {
+        display: none;
+    }
+    @media screen and (max-width: 768px), (min-width: 1119px) {
+        display: none;
+    }
+    @media screen and (min-width:1200px) {
     display: flex;
     margin: 0px;
     padding: 0px;
-    @media screen and (max-width: 480px), (min-width: 480px) {
-        display: none;
     }
 }
 .works__list-text {
@@ -57,5 +68,11 @@
     letter-spacing: 0.03em;
     @media screen and (max-width: 480px), (min-width: 480px) {
         display: none;
+    }
+    @media screen and (max-width: 768px), (min-width: 1119px) {
+        display: none;
+    }
+    @media screen and (min-width:1200px) {
+        display: block;
     }
 }
