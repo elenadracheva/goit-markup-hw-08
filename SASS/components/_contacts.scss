@@ -7,12 +7,6 @@
 }
 .contacts__header {  
     display: flex;
-    // align-items: center;
-    // font-weight: 500;
-    // font-size: 14px;
-    // font-style: normal;
-    // line-height: 1.1;
-    // letter-spacing: 0.02em;
     color: #757575;
     transition-property: color;
     transition-duration: 250ms;
@@ -22,7 +16,14 @@
         color: var(--accent-color);
         outline: none;
     }
-   
+    @media screen and (min-width: 1200px){
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    }
 
 }
 
