@@ -1,8 +1,4 @@
 .advantage {
-    // margin-left: auto;
-    // margin-right: auto;
-    // padding-top: 94px;
-    // padding-bottom: 94px;
     @media screen and (max-width: 480px), (min-width: 480px) {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -12,6 +8,12 @@
         margin-top: 60px;
         margin-bottom: 60px;
         height: auto;
+    }
+    @media screen and (min-width: 1200px){
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }
 
@@ -25,13 +27,14 @@
         margin-top: 30px;
         margin-bottom: 10px;
     }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        font-weight: 700;
+        color: #212121;
+        letter-spacing: 0.03em;
+    }
 }
-// .advantage__list .advantage__list-item:not(:last-child) {
-//     // margin-right: 30px;
-//     @media screen and (max-width: 480px), (min-width: 480px) {
-//         width: 100%;
-//     }
-// }
+
 .advantage__list-item { 
     @media screen and (max-width: 480px), (min-width: 480px) {
         width: 100%;
@@ -40,12 +43,16 @@
         width: calc((100% - 4*15px)/2);
         margin: 15px;   
     }
+    @media screen and (min-width: 1200px) {
+        margin: 0px;
+        width: 270px;
+        margin: 15px;
+    }
 }
 .advantage__list-item::before {
     display: block;
     content: "";
     height: 120px;
-    // width: 270px;
     border-radius: 4px;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,9 +65,12 @@
         display: flex;
         flex-wrap: wrap;
     }
+    @media screen and  (min-width: 1200px){
+        display: flex;
+        width: 270px;
+    }
 }
-.advantage__list {
-    // margin: 0px;
+.advantage__list { 
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
@@ -72,6 +82,12 @@
         margin: -15px;
         display: flex;
         flex-wrap: wrap;     
+    }
+    @media screen and  (min-width: 1200px) {
+        margin: -15px;
+        padding: 0px;
+        display: flex;
+        list-style: none;
     }
 }
 .advantage__fill {
